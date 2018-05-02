@@ -88,7 +88,6 @@ void grayScale()
  ******************************************************************************
  Funkce prevadi obrazek na cernobily pomoci algoritmu maticoveho rozptyleni.
  Ukol za 1 bod */
-
 void orderedDithering()
 {
 	// převod na gracyscale
