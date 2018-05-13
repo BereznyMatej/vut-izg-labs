@@ -1,4 +1,6 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 3.1.0)
+# Author: Dominik Harmim <harmim6@gmail.com>
+
+CMAKE_MINIMUM_REQUIRED(VERSION 3.11)
 
 
 PROJECT(izg_lab_01)
