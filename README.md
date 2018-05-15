@@ -4,3 +4,4 @@
 
 ### Cvičení
 1. [Redukce barevného prostoru](1/README.md)
+2. [Generování základních objektů v rastru](2/README.md)

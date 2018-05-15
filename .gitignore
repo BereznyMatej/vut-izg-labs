@@ -6,6 +6,14 @@
 cmake-build-*/
 
 
+# Project executables
+izg_lab_??
+
+
+# data output
+/**/data/out.bmp
+
+
 ### C
 # Prerequisites
 *.d
