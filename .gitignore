@@ -6,11 +6,11 @@
 cmake-build-*/
 
 
-# Project executables
+### Project executables
 izg_lab_??
 
 
-# data output
+### data output
 /**/data/out.bmp
 
 
