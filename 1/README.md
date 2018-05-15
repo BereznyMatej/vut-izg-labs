@@ -1,5 +1,11 @@
 # 1. Redukce barevného prostoru
 
+## Osnova cvičení
+- Organizace cvičení
+- Seznámení s kostrou aplikace používanou v IZG
+- Redukce barevného prostoru
+- Samostatná práce (bodované úkoly)
+
 ## Prerekvizita
 - Přednáška č. 2 - Redukce barevneho prostoru, barevný a monochromatický obraz
 
