@@ -3,7 +3,7 @@
  * isolony@fit.vutbr.cz
  *
  * $Id: $
- * 
+ *
  * Popis: Hlavicky funkci pro funkce studentu
  *
  * Opravy a modifikace:
@@ -16,15 +16,13 @@
 #include "student.h"
 #include "globals.h"
 
-#include <ctime>
-
 
 #define FRAC_BITS 8
 
 
 /******************************************************************************
  ******************************************************************************
- Funkce vraci pixel z pozice x, y. Je nutne hlidat frame_bufferu, pokud 
+ Funkce vraci pixel z pozice x, y. Je nutne hlidat frame_bufferu, pokud
  je dana souradnice mimo hranice, funkce vraci barvu (0, 0, 0).*/
 S_RGBA getPixel(int x, int y)
 {
@@ -38,7 +36,7 @@ S_RGBA getPixel(int x, int y)
 
 /******************************************************************************
  ******************************************************************************
- Funkce vlozi pixel na pozici x, y. Je nutne hlidat frame_bufferu, pokud 
+ Funkce vlozi pixel na pozici x, y. Je nutne hlidat frame_bufferu, pokud
  je dana souradnice mimo hranice, funkce neprovadi zadnou zmenu.*/
 void putPixel(int x, int y, S_RGBA color)
 {
