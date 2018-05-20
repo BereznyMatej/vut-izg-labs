@@ -1,4 +1,4 @@
-# 2. Generování základních objektů v rastru
+# 3. Vyplňování uzavřených objektů ve 2D
 
 ## Osnova cvičení
 - Krátké shrnutí na téma vyplňování 2D objektů
