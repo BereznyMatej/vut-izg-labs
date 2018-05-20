@@ -59,9 +59,9 @@ int width = 800;
 int height = 600;
 
 /* Nazvy i/o souboru */
-const char *input_image = "../data/image.bmp";
-const char *output_image = "../data/out.bmp";
-const char *lines_file = "../data/lines.txt";
+const char *input_image = "data/image.bmp";
+const char *output_image = "data/out.bmp";
+const char *lines_file = "data/lines.txt";
 
 /* Body pro vykresleni primitiv */
 int x_begin, y_begin, x_end, y_end;

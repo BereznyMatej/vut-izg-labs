@@ -6,8 +6,8 @@
 ################################################################################
 # promenne prekladu
 
-CC = g++
-CFLAGS = -g3 -Wall $(INCS) -Wno-unused-function -fmessage-length=0
+CXX = g++
+CXXFLAGS = -g3 -Wall $(INCS) -Wno-unused-function -fmessage-length=0
 
 ifeq ($(OS), Windows_NT)
     INCS = -I../SDL-1.2.15/include -IQ:/mingw/SDL/SDL
@@ -20,7 +20,7 @@ else
         LIBS = -lSDL
     else ifeq ($(UNAME_S), Darwin)
         LIBS = `sdl-config --libs`
-        CFLAGS += `sdl-config --cflags`
+        CXXFLAGS += `sdl-config --cflags`
     endif
     INCS = -I/usr/include/SDL
     REMOVE = rm -f
@@ -37,28 +37,28 @@ all: $(BIN)
 ################################################################################
 # linkovani vysledneho souboru
 $(BIN):	main.o student.o io.o color.o
-	$(CC) main.o student.o io.o color.o -o $(BIN) $(LIBS)
+	$(CXX) $^ -o $@ $(LIBS)
 
 
 ################################################################################
 # kompilace hlavniho souboru
 main.o: main.cpp
-	$(CC) -c main.cpp -o main.o $(CFLAGS)
+	$(CXX) -c $< -o $@ $(CXXFLAGS)
 
 
 ################################################################################
 # kompilace studentskeho souboru
 student.o: student.cpp student.h
-	$(CC) -c student.cpp -o student.o $(CFLAGS)
+	$(CXX) -c $< -o $@ $(CXXFLAGS)
 
 
 ################################################################################
 # kompilace dilcich souboru
 io.o: io.cpp io.h
-	$(CC) -c io.cpp -o io.o $(CFLAGS)
+	$(CXX) -c $< -o $@ $(CXXFLAGS)
 
 color.o: color.cpp color.h
-	$(CC) -c color.cpp -o color.o $(CFLAGS)
+	$(CXX) -c $< -o $@ $(CXXFLAGS)
 
 
 ################################################################################

@@ -61,8 +61,8 @@ int width = 800;
 int height = 600;
 
 /* Nazvy i/o souboru */
-char *input_image = "../data/image.bmp";
-char *output_image = "../data/out.bmp";
+char *input_image = "data/image.bmp";
+char *output_image = "data/out.bmp";
 
 
 /******************************************************************************

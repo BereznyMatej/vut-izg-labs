@@ -3,7 +3,7 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.11)
 
 
-PROJECT(izg_lab_01)
+PROJECT(izg_lab_03)
 
 
 IF(MSVC)
@@ -25,12 +25,12 @@ ELSE()
 ENDIF()
 
 
-SET(CMAKE_C_COMPILER gcc)
-SET(CMAKE_C_FLAGS "-g3 -Wall -Wno-unused-function -fmessage-length=0")
+SET(CMAKE_CXX_COMPILER g++)
+SET(CMAKE_CXX_FLAGS "-g3 -Wall -Wno-unused-function -fmessage-length=0")
 
 
-FILE(GLOB SOURCES "*.c")
-FILE(GLOB HEADERS "*.h")
+FILE(GLOB SOURCES "src/*.cpp")
+FILE(GLOB HEADERS "src/*.h")
 
 
 EXECUTE_PROCESS(COMMAND ${CMAKE_COMMAND} -E create_symlink
