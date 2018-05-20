@@ -137,6 +137,7 @@ void runTest(int test)
 	{
 			// 1) Try to create non-convex polygon.
 		case 1:
+		{
 			const int points1[5][2] =
 				{{654, 28}, {758, 28}, {724, 61}, {762, 96}, {644, 95}};
 			points = makeSeedStack(points1, 5);
@@ -144,9 +145,11 @@ void runTest(int test)
 			pinedaPolygon(points, 5, COLOR_SALMON, color2);
 			delete[] points;
 			break;
+		}
 
 			// 2) Try to create a triangle.
 		case 2:
+		{
 			const int points2[3][2] = {{30, 88}, {182, 22}, {175, 128}};
 			points = makeSeedStack(points2, 3);
 			pinedaTriangle(
@@ -154,9 +157,11 @@ void runTest(int test)
 			);
 			delete[] points;
 			break;
+		}
 
 			// 3) Try to create triangle out of view.
 		case 3:
+		{
 			const int points3[3][2] = {{256, 121}, {250, -10}, {900, 200}};
 			points = makeSeedStack(points3, 3);
 			pinedaTriangle(
@@ -164,9 +169,11 @@ void runTest(int test)
 			);
 			delete[] points;
 			break;
+		}
 
 			// 4) Try to create polygon with intersection.
 		case 4:
+		{
 			const int points4[12][2] = {
 				{47, 214},
 				{54, 174},
@@ -186,9 +193,11 @@ void runTest(int test)
 			pinedaPolygon(points, 12, COLOR_SALMON, color2);
 			delete[] points;
 			break;
+		}
 
 			// 5) Try to create small polygon.
 		case 5:
+		{
 			const int points5[8][2] = {
 				{292, 230},
 				{327, 174},
@@ -204,24 +213,30 @@ void runTest(int test)
 			pinedaPolygon(points, 8, COLOR_SALMON, color2);
 			delete[] points;
 			break;
+		}
 
 			// 6) Try to create wrong polygon - zero points.
 		case 6:
+		{
 			points = new Point[0];
 			pinedaPolygon(points, 0, COLOR_SALMON, color2);
 			delete[] points;
 			break;
+		}
 
 			// 7) Try to create wrong polygon - two points. Line must be drawn.
 		case 7:
+		{
 			const int points7[2][2] = {{424, 17}, {599, 64}};
 			points = makeSeedStack(points7, 2);
 			pinedaPolygon(points, 2, COLOR_SALMON, color2);
 			delete[] points;
 			break;
+		}
 
 			// 8) Try to create really big polygon.
 		case 8:
+		{
 			const int points8[9][2] = {
 				{351, 501},
 				{353, 372},
@@ -238,9 +253,11 @@ void runTest(int test)
 			pinedaPolygon(points, 9, COLOR_SALMON, color2);
 			delete[] points;
 			break;
+		}
 
 			// 9) Try to create really big polygon out of view.
 		case 9:
+		{
 			const int points9[4][2] =
 				{{264, 316}, {-1000, 270}, {-1000, 1000}, {330, 1000}};
 			points = makeSeedStack(points9, 4);
@@ -248,9 +265,11 @@ void runTest(int test)
 			pinedaPolygon(points, 4, COLOR_SALMON, color2);
 			delete[] points;
 			break;
+		}
 
 			// 10) Try to create polygon with zero length side.
 		case 10:
+		{
 			const int points10[6][2] = {
 				{195, 150},
 				{195, 180},
@@ -264,6 +283,7 @@ void runTest(int test)
 			pinedaPolygon(points, 6, COLOR_SALMON, color2);
 			delete[] points;
 			break;
+		}
 
 		default:
 			break;
