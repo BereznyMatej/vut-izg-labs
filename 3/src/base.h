@@ -185,9 +185,7 @@ typedef std::vector<EdgeParam> EdgeParams;
             *((int *) (_dst + i)) = *((const int *)(_src + i)); \
     } \
     else \
-    { \
         for (size_t i = 0; i < _length; ++i) *(_dst + i) = *(_src + i); \
-    } \
 }
 
 

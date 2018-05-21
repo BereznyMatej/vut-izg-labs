@@ -414,37 +414,57 @@ void onKeyboard(SDL_KeyboardEvent *key)
 
 		case SDLK_r:
 			if (key->keysym.mod & KMOD_LCTRL)
+			{
 				color2 = COLOR_RED;
+			}
 			else
+			{
 				color1 = COLOR_RED;
+			}
 			break;
 
 		case SDLK_g:
 			if (key->keysym.mod & KMOD_LCTRL)
+			{
 				color2 = COLOR_GREEN;
+			}
 			else
+			{
 				color1 = COLOR_GREEN;
+			}
 			break;
 
 		case SDLK_b:
 			if (key->keysym.mod & KMOD_LCTRL)
+			{
 				color2 = COLOR_BLUE;
+			}
 			else
+			{
 				color1 = COLOR_BLUE;
+			}
 			break;
 
 		case SDLK_w:
 			if (key->keysym.mod & KMOD_LCTRL)
+			{
 				color2 = COLOR_WHITE;
+			}
 			else
+			{
 				color1 = COLOR_WHITE;
+			}
 			break;
 
 		case SDLK_k:
 			if (key->keysym.mod & KMOD_LCTRL)
+			{
 				color2 = COLOR_BLACK;
+			}
 			else
+			{
 				color1 = COLOR_BLACK;
+			}
 			break;
 
 		case SDLK_t:
@@ -478,9 +498,13 @@ void onKeyboard(SDL_KeyboardEvent *key)
 		case SDLK_s:
 			// Stisknuti S tlacitka ulozi obrazek
 			if (saveMyBitmap(outputImageName, &framebuffer, width, height))
+			{
 				IZG_INFO("File successfully saved\n");
+			}
 			else
+			{
 				IZG_ERROR("Error in saving the file.\n");
+			}
 			break;
 
 		default:
