@@ -178,7 +178,7 @@ void pinedaTriangle(
 
 	// (deltaX, deltaY) = (x1 - x0, y1 - y0)
 	EdgeParams edgeParams(3);
-	edgeParams[0] = EdgeParam(v2.x - v1.x, v2.y - v1.y); // [v1, v1]
+	edgeParams[0] = EdgeParam(v2.x - v1.x, v2.y - v1.y); // [v1, v2]
 	edgeParams[1] = EdgeParam(v3.x - v2.x, v3.y - v2.y); // [v2, v3]
 	edgeParams[2] = EdgeParam(v1.x - v3.x, v1.y - v3.y); // [v3, v1]
 
