@@ -292,7 +292,7 @@ void pinedaPolygon(
 			// c = xi * yj - xj * yi
 			c = points[i].x * points[j].y - points[j].x * points[i].y;
 
-		// Pokud do obecné rovnice přímky dosadím za bod c následující bod,
+		// Pokud do obecné rovnice přímky dosadím následující bod,
 		// tj. i + 2 a výsledek rovnice bude < 0 pro kterékoliv 3 body,
 		// tak polygon není konvexní.
 		if (a * points[k].x + b * points[k].y + c < 0)
