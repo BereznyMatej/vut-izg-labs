@@ -120,15 +120,14 @@ extern "C" {
     char *_dst = (char *) (pDst); \
     const char *_src = (const char *) (pSrc); \
     size_t _length = (length); \
-    size_t i = 0; \
     if((_length & (sizeof(int) - 1)) == 0) \
     { \
-        for(; i < _length; i += sizeof(int) ) \
+        for(size_t i = 0; i < _length; i += sizeof(int) ) \
             *((int *) (_dst + i)) = *((const int *) (_src + i)); \
     } \
     else \
     { \
-        for(; i < _length; ++i) *(_dst + i) = *(_src + i); \
+        for(size_t i = 0; i < _length; ++i) *(_dst + i) = *(_src + i); \
     } \
 }
 

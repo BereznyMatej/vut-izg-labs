@@ -30,7 +30,6 @@
 #include "student.h"
 #include "globals.h"
 #include "vector.h"
-#include "main.h"
 
 
 /******************************************************************************
@@ -55,7 +54,7 @@ int height = 800;
 /* Kvalita generovane krivky - pocet segmentu - usecek,
  * ze kterych je vykreslena */
 int quality = 100;
-int delay = 2;    // ms
+int delay = 1;    // ms
 
 //Viz hlavicka vector.h
 USE_VECTOR_OF(Point2d, point2d_vec)
