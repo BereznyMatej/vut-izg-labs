@@ -10,12 +10,12 @@
 #pragma once
 
 
-#include <student/fwd.h>
-
-
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+
+#include <student/fwd.h>
 
 
 /**

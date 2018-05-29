@@ -11,7 +11,6 @@
 #include <SDL2/SDL.h>
 
 #include <student/camera.h>
-#include <student/fwd.h>
 #include <student/mouseCamera.h>
 
 
@@ -61,18 +60,26 @@ void onMouseMotion(int x, int y, int xrel, int yrel)
 		cameraAngleX += ((float) yrel) * cameraSensitivity;
 		cameraAngleY += ((float) xrel) * cameraSensitivity;
 		if (cameraAngleX < -MY_PI / 2.f)
-		{ cameraAngleX = -MY_PI / 2.f; }
+		{
+			cameraAngleX = -MY_PI / 2.f;
+		}
 		if (cameraAngleX > +MY_PI / 2.f)
-		{ cameraAngleX = +MY_PI / 2.f; }
+		{
+			cameraAngleX = +MY_PI / 2.f;
+		}
 		changed = 1;
 	}
 	if (rightMouseButtonDown)
 	{
 		cameraDistance += ((float) yrel) * cameraZoomSpeed;
 		if (cameraDistance < cameraMinDistance)
-		{ cameraDistance = cameraMinDistance; }
+		{
+			cameraDistance = cameraMinDistance;
+		}
 		if (cameraDistance > cameraMaxDistance)
-		{ cameraDistance = cameraMaxDistance; }
+		{
+			cameraDistance = cameraMaxDistance;
+		}
 		changed = 1;
 	}
 	if (changed)
@@ -88,22 +95,34 @@ void onMouseMotion(int x, int y, int xrel, int yrel)
 void onMouseButtonDown(uint8_t button)
 {
 	if (button == SDL_BUTTON_LEFT)
-	{ leftMouseButtonDown = 1; }
+	{
+		leftMouseButtonDown = 1;
+	}
 	if (button == SDL_BUTTON_RIGHT)
-	{ rightMouseButtonDown = 1; }
+	{
+		rightMouseButtonDown = 1;
+	}
 	if (button == SDL_BUTTON_MIDDLE)
-	{ middleMouseButtonDown = 1; }
+	{
+		middleMouseButtonDown = 1;
+	}
 }
 
 
 void onMouseButtonUp(uint8_t button)
 {
 	if (button == SDL_BUTTON_LEFT)
-	{ leftMouseButtonDown = 0; }
+	{
+		leftMouseButtonDown = 0;
+	}
 	if (button == SDL_BUTTON_RIGHT)
-	{ rightMouseButtonDown = 0; }
+	{
+		rightMouseButtonDown = 0;
+	}
 	if (button == SDL_BUTTON_MIDDLE)
-	{ middleMouseButtonDown = 0; }
+	{
+		middleMouseButtonDown = 0;
+	}
 }
 
 

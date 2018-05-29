@@ -11,14 +11,15 @@
 #pragma once
 
 
-#include <stdint.h>
-
-#include <student/linearAlgebra.h>
-
-
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+
+#include <stdint.h>
+
+#include <student/fwd.h>
+#include <student/linearAlgebra.h>
 
 
 /// This variable contains view matrix of orbit camera.

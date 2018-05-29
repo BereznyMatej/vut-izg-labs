@@ -7,10 +7,10 @@
  */
 
 
+#include <stdlib.h>
 #include <assert.h>
 #include <math.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 #include <student/linearAlgebra.h>
 
@@ -19,7 +19,9 @@ void zero_Vec2(Vec2 *const target)
 {
 	assert(target != NULL);
 	for (size_t i = 0; i < 2; ++i)
-	{ target->data[i] = 0.f; }
+	{
+		target->data[i] = 0.f;
+	}
 }
 
 
@@ -27,7 +29,9 @@ void zero_Vec3(Vec3 *const target)
 {
 	assert(target != NULL);
 	for (size_t i = 0; i < 3; ++i)
-	{ target->data[i] = 0.f; }
+	{
+		target->data[i] = 0.f;
+	}
 }
 
 
@@ -35,7 +39,9 @@ void zero_Vec4(Vec4 *const target)
 {
 	assert(target != NULL);
 	for (size_t i = 0; i < 4; ++i)
-	{ target->data[i] = 0.f; }
+	{
+		target->data[i] = 0.f;
+	}
 }
 
 
@@ -74,7 +80,9 @@ void copy_Vec2(Vec2 *const target, const Vec2 *const source)
 	assert(target != NULL);
 	assert(source != NULL);
 	for (size_t i = 0; i < 2; ++i)
-	{ target->data[i] = source->data[i]; }
+	{
+		target->data[i] = source->data[i];
+	}
 }
 
 
@@ -83,7 +91,9 @@ void copy_Vec3(Vec3 *const target, const Vec3 *const source)
 	assert(target != NULL);
 	assert(source != NULL);
 	for (size_t i = 0; i < 3; ++i)
-	{ target->data[i] = source->data[i]; }
+	{
+		target->data[i] = source->data[i];
+	}
 }
 
 
@@ -92,7 +102,9 @@ void copy_Vec4(Vec4 *const target, const Vec4 *const source)
 	assert(target != NULL);
 	assert(source != NULL);
 	for (size_t i = 0; i < 4; ++i)
-	{ target->data[i] = source->data[i]; }
+	{
+		target->data[i] = source->data[i];
+	}
 }
 
 
@@ -101,7 +113,9 @@ void copy_Vec4_To_Vec2(Vec2 *const target, const Vec4 *const source)
 	assert(target != NULL);
 	assert(source != NULL);
 	for (size_t i = 0; i < 2; ++i)
-	{ target->data[i] = source->data[i]; }
+	{
+		target->data[i] = source->data[i];
+	}
 }
 
 
@@ -110,7 +124,9 @@ void copy_Vec4_To_Vec3(Vec3 *const target, const Vec4 *const source)
 	assert(target != NULL);
 	assert(source != NULL);
 	for (size_t i = 0; i < 3; ++i)
-	{ target->data[i] = source->data[i]; }
+	{
+		target->data[i] = source->data[i];
+	}
 }
 
 
@@ -119,7 +135,9 @@ void copy_Vec3_To_Vec2(Vec2 *const target, const Vec3 *const source)
 	assert(target != NULL);
 	assert(source != NULL);
 	for (size_t i = 0; i < 2; ++i)
-	{ target->data[i] = source->data[i]; }
+	{
+		target->data[i] = source->data[i];
+	}
 }
 
 
@@ -235,7 +253,9 @@ void add_Vec2(Vec2 *const output, const Vec2 *const a, const Vec2 *const b)
 	assert(a != NULL);
 	assert(b != NULL);
 	for (size_t i = 0; i < 2; ++i)
-	{ output->data[i] = a->data[i] + b->data[i]; }
+	{
+		output->data[i] = a->data[i] + b->data[i];
+	}
 }
 
 
@@ -245,7 +265,9 @@ void add_Vec3(Vec3 *const output, const Vec3 *const a, const Vec3 *const b)
 	assert(a != NULL);
 	assert(b != NULL);
 	for (size_t i = 0; i < 3; ++i)
-	{ output->data[i] = a->data[i] + b->data[i]; }
+	{
+		output->data[i] = a->data[i] + b->data[i];
+	}
 }
 
 
@@ -255,7 +277,9 @@ void add_Vec4(Vec4 *const output, const Vec4 *const a, const Vec4 *const b)
 	assert(a != NULL);
 	assert(b != NULL);
 	for (size_t i = 0; i < 4; ++i)
-	{ output->data[i] = a->data[i] + b->data[i]; }
+	{
+		output->data[i] = a->data[i] + b->data[i];
+	}
 }
 
 
@@ -265,7 +289,9 @@ void sub_Vec2(Vec2 *const output, const Vec2 *const a, const Vec2 *const b)
 	assert(a != NULL);
 	assert(b != NULL);
 	for (size_t i = 0; i < 2; ++i)
-	{ output->data[i] = a->data[i] - b->data[i]; }
+	{
+		output->data[i] = a->data[i] - b->data[i];
+	}
 }
 
 
@@ -275,7 +301,9 @@ void sub_Vec3(Vec3 *const output, const Vec3 *const a, const Vec3 *const b)
 	assert(a != NULL);
 	assert(b != NULL);
 	for (size_t i = 0; i < 3; ++i)
-	{ output->data[i] = a->data[i] - b->data[i]; }
+	{
+		output->data[i] = a->data[i] - b->data[i];
+	}
 }
 
 
@@ -285,7 +313,9 @@ void sub_Vec4(Vec4 *const output, const Vec4 *const a, const Vec4 *const b)
 	assert(a != NULL);
 	assert(b != NULL);
 	for (size_t i = 0; i < 4; ++i)
-	{ output->data[i] = a->data[i] - b->data[i]; }
+	{
+		output->data[i] = a->data[i] - b->data[i];
+	}
 }
 
 
@@ -337,7 +367,9 @@ float dot_Vec2(const Vec2 *const left, const Vec2 *const right)
 	assert(right != NULL);
 	float result = 0;
 	for (size_t i = 0; i < 2; ++i)
-	{ result += left->data[i] * right->data[i]; }
+	{
+		result += left->data[i] * right->data[i];
+	}
 	return result;
 }
 
@@ -348,7 +380,9 @@ float dot_Vec3(const Vec3 *const left, const Vec3 *const right)
 	assert(right != NULL);
 	float result = 0;
 	for (size_t i = 0; i < 3; ++i)
-	{ result += left->data[i] * right->data[i]; }
+	{
+		result += left->data[i] * right->data[i];
+	}
 	return result;
 }
 
@@ -359,7 +393,9 @@ float dot_Vec4(const Vec4 *const left, const Vec4 *const right)
 	assert(right != NULL);
 	float result = 0;
 	for (size_t i = 0; i < 4; ++i)
-	{ result += left->data[i] * right->data[i]; }
+	{
+		result += left->data[i] * right->data[i];
+	}
 	return result;
 }
 
@@ -371,7 +407,9 @@ void multiply_Vec2_Float(
 	assert(output != NULL);
 	assert(left != NULL);
 	for (size_t i = 0; i < 2; ++i)
-	{ output->data[i] = left->data[i] * constant; }
+	{
+		output->data[i] = left->data[i] * constant;
+	}
 }
 
 
@@ -382,7 +420,9 @@ void multiply_Vec3_Float(
 	assert(output != NULL);
 	assert(left != NULL);
 	for (size_t i = 0; i < 3; ++i)
-	{ output->data[i] = left->data[i] * constant; }
+	{
+		output->data[i] = left->data[i] * constant;
+	}
 }
 
 
@@ -393,7 +433,9 @@ void multiply_Vec4_Float(
 	assert(output != NULL);
 	assert(left != NULL);
 	for (size_t i = 0; i < 4; ++i)
-	{ output->data[i] = left->data[i] * constant; }
+	{
+		output->data[i] = left->data[i] * constant;
+	}
 }
 
 
@@ -424,7 +466,9 @@ void normalize_Vec2(Vec2 *const output, const Vec2 *const input)
 	assert(input != NULL);
 	float length = length_Vec2(input);
 	if (length == 0.f)
-	{ return; }
+	{
+		return;
+	}
 	length = 1.f / length;
 	multiply_Vec2_Float(output, input, length);
 }
@@ -436,7 +480,9 @@ void normalize_Vec3(Vec3 *const output, const Vec3 *const input)
 	assert(input != NULL);
 	float length = length_Vec3(input);
 	if (length == 0.f)
-	{ return; }
+	{
+		return;
+	}
 	length = 1.f / length;
 	multiply_Vec3_Float(output, input, length);
 }
@@ -448,7 +494,9 @@ void normalize_Vec4(Vec4 *const output, const Vec4 *const input)
 	assert(input != NULL);
 	float length = length_Vec4(input);
 	if (length == 0.f)
-	{ return; }
+	{
+		return;
+	}
 	length = 1.f / length;
 	multiply_Vec4_Float(output, input, length);
 }
@@ -494,7 +542,9 @@ void identity_Mat4(Mat4 *const output)
 	for (size_t y = 0; y < 4; ++y)
 	{
 		for (size_t x = 0; x < 4; ++x)
-		{ output->column[x].data[y] = (float) (y == x); }
+		{
+			output->column[x].data[y] = (float) (y == x);
+		}
 	}
 }
 
@@ -626,7 +676,9 @@ void invert_Mat4(Mat4 *const output, const Mat4 *const input)
 		for (size_t y = 0; y < 4; ++y)
 		{
 			if (y == x)
-			{ continue; }
+			{
+				continue;
+			}
 			float v = c.column[x].data[y];
 			for (size_t l = 0; l < 4; ++l)
 			{
