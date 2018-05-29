@@ -43,5 +43,3 @@ void quadExample_onDraw();
 #ifdef __cplusplus
 }
 #endif
-
-
